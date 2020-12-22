@@ -1,7 +1,18 @@
 #include<iostream>
 #include<string>
 #include<vector>
+#include<queue>
+#include<map>
+#include<algorithm>
 using namespace std;
+int Min;
+queue<shift> que;
+
+void clear_que(queue<shift>& q) {
+	queue<shift> empty;
+	swap(empty, q);
+}
+
 
 class clock {
 public:
@@ -72,6 +83,17 @@ public:
 };
 
 vector<city> City;
+map<string, int> city_num;
+
+int TAG[50];         //assume that there would be only less than 50 cities.
+
+void refresh_city()              //inorder to traverse the cities.
+{
+	for (int i = 0; i < City.size(); ++i)
+		city_num[City[i].name] = i;
+	for (int i = 0; i < 50; ++i) 
+		tag[i] = 0;
+}
 
 void add_city()
 {
@@ -286,7 +308,7 @@ void delete_shift()
 	}
 }
 
-int time_gap(clock a, clock b)  //This branch asumes that all shifts finish in one day
+int time_gap(clock a, clock b)  //This branch assumes that all shifts finish in one day
 {
 	return b.clk2num() - a.clk2num();
 }
@@ -322,6 +344,73 @@ void print()
 		City[n].plane_departure[i].print();
 	for (int i = 0; i < City[n].plane_arrival.size(); ++i)
 		City[n].plane_arrival[i].print();
+}
+
+bool eco_train(string from, string to, int cost,queue<shift> Q)
+{
+	if (from == to)
+	{
+		if (cost < Min)
+		{
+			Min = cost;
+			que = Q;
+		}
+		return true;
+	}
+}
+
+void economical()
+{
+	cout << "Please input your originating city + destination + type of vehicle." << endl
+		<< "( 0 means train and 1 means plane.)" << endl;
+	string from, to;
+	int _type;
+	cin >> from >> to >> _type;
+	Min = INT_MAX;
+	clear_que(que);
+	queue<shift> Q;
+	if (_type == 0)
+	{
+		
+		if (eco_train(from, to, 0, Q))
+			display_scheme(que);
+		else cout << "There is no route from " << from << " to " << to << "." << endl;
+
+	}
+	else
+	{
+		if (eco_plane(from, to, 0, Q))
+			display_scheme(que);
+		else cout << "There is no route from " << from << " to " << to << "." << endl;
+	}
+	clear_que(que);
+	Min = INT_MAX;
+}
+
+void fast()
+{
+	cout << "Please input your originating city + destination + type of vehicle." << endl
+		<< "( 0 means train and 1 means plane.)" << endl;
+	string from, to;
+	int _type;
+	cin >> from >> to >> _type;
+	Min = INT_MAX;
+	clear_que(que);
+	queue<shift> Q;
+	if (_type == 0)
+	{
+		if (fast_train(from, to, 0, Q))
+			display_scheme(que);
+		else cout << "There is no route from " << from << " to " << to << "." << endl;
+	}
+	else
+	{
+		if (fast_plane(from, to, 0, Q))
+			display_scheme(que);
+		else cout << "There is no route from " << from << " to " << to << "." << endl;
+	}
+	Min = INT_MAX;
+	clear_que(que);
 }
 
 int main()
