@@ -1,7 +1,18 @@
 #include<iostream>
 #include<string>
 #include<vector>
+#include<queue>
+#include<map>
+#include<algorithm>
 using namespace std;
+int Min;
+queue<shift> que;
+
+void clear_que(queue<shift>& q) {
+	queue<shift> empty;
+	swap(empty, q);
+}
+
 
 class clock {
 public:
@@ -25,20 +36,24 @@ public:
 		else cout << hour;
 		cout << " : ";
 		if (min == 0) cout << "00 ";
-		else cout << min<<" ";
+		else cout << min << " ";
 	}
 	int clk2num()      //In order to compare the which shifts comes first
 	{
 		return 60 * hour + min;
 	}
+	bool operator <(clock& temp)
+	{
+		return this->clk2num() < temp.clk2num();
+	}
 };
 
 
 
-class shift {                        
+class shift {
 public:
 	shift();
-	bool operator ==(shift& temp) 
+	bool operator ==(shift& temp)
 	{
 		if (type == temp.type && From == temp.From
 			&& To == temp.To && start.clk2num() == temp.start.clk2num()
@@ -56,8 +71,8 @@ public:
 		if (type == 0) cout << "Train" << " ";
 		else cout << "Plane" << " ";
 		cout << From << "->" << To << " ";
-		cout << "Depart:";start.display(); 
-		cout << "Arrive:";end.display();
+		cout << "Depart:"; start.display();
+		cout << "Arrive:"; end.display();
 		cout << "Price: " << price << endl;
 	}
 };
@@ -72,6 +87,17 @@ public:
 };
 
 vector<city> City;
+map<string, int> city_num;
+
+int TAG[50];         //assume that there would be only less than 50 cities.
+
+void refresh_city()              //inorder to traverse the cities.
+{
+	for (int i = 0; i < City.size(); ++i)
+		city_num[City[i].name] = i;
+	for (int i = 0; i < 50; ++i)
+		tag[i] = 0;
+}
 
 void add_city()
 {
@@ -213,7 +239,7 @@ void delete_shift()
 		>> one_run.start.hour >> one_run.start.min
 		>> one_run.end.hour >> one_run.end.min >> one_run.price;
 
-	int tag1 = 0,tag2 = 0;
+	int tag1 = 0, tag2 = 0;
 
 	for (int i = 0; i < City.size(); ++i)
 	{
@@ -221,9 +247,9 @@ void delete_shift()
 		if (City[i].name == one_run.To) tag2 = 1;
 	}
 
-	if (tag1 == 0 || tag2 == 0) 
-		cout << "City not recorded.Please check your input."<< endl;             
-	   //if city not found
+	if (tag1 == 0 || tag2 == 0)
+		cout << "City not recorded.Please check your input." << endl;
+	//if city not found
 
 	for (int i = 0; i < City.size(); ++i)
 	{
@@ -286,16 +312,17 @@ void delete_shift()
 	}
 }
 
-int time_gap(clock a, clock b)  //This branch asumes that all shifts finish in one day
+int time_gap(clock a, clock b)  //This branch assumes that all shifts finish in one day
 {
 	return b.clk2num() - a.clk2num();
 }
 
-void min2clock(int a)
+clock min2clock(int a)
 {
-	int hour = a % 60;
-	int min = a - hour * 60;
-	cout << hour << " : " << min << " ";
+	clock clk;
+	clk.hour = a % 60;
+	clk.min = a - hour * 60;
+	return clk;
 }
 
 void print()
@@ -303,7 +330,7 @@ void print()
 	cout << "Please input the name of city." << endl;
 	string s;
 	int tag = 0, n;
-	for(n=0;n<City.size();++n)
+	for (n = 0; n < City.size(); ++n)
 		if (City[n].name == s)
 		{
 			tag = 1;
@@ -322,6 +349,243 @@ void print()
 		City[n].plane_departure[i].print();
 	for (int i = 0; i < City[n].plane_arrival.size(); ++i)
 		City[n].plane_arrival[i].print();
+}
+
+bool eco_train(string from, string to, int cost, queue<shift> Q,clock clk)
+{
+	bool succ = 0;
+	TAG[city_num[from]] = 1;
+	if (from == to)
+	{
+		if (cost < Min)
+		{
+			Min = cost;
+			que = Q;
+		}
+		return true;
+	}
+	int k;
+	for (int i = 0; i < City.size(); ++i)
+	{
+		if (City[i].name == from) k = i;
+	}
+	for(int i=0;i<City[k].train_departure.size();++i)
+		if (City[k].train_departure[i].start > clk && TAG[city_num[City[k].train_departure[i].To]]==0)
+		{
+			queue<shift> temp = Q;
+			temp.push(City[k].train_departure[i]);
+			if (eco_train(City[k].train_departure[i].To, to,
+				cost + City[k].train_departure[i].price,
+				temp, City[k].train_departure[i].end))
+				succ = true;
+		}
+	TAG[city_num[from]] = 0;
+	if (succ) return true;
+	else return false;
+}
+
+bool eco_plane(string from, string to, int cost, queue<shift> Q, clock clk)
+{
+	bool succ = 0;
+	TAG[city_num[from]] = 1;
+	if (from == to)
+	{
+		if (cost < Min)
+		{
+			Min = cost;
+			que = Q;
+		}
+		return true;
+	}
+	int k;
+	for (int i = 0; i < City.size(); ++i)
+	{
+		if (City[i].name == from) k = i;
+	}
+	for (int i = 0; i < City[k].plane_departure.size(); ++i)
+		if (City[k].plane_departure[i].start > clk && TAG[city_num[City[k].plane_departure[i].To]] == 0)
+		{
+			queue<shift> temp = Q;
+			temp.push(City[k].plane_departure[i]);
+			if (eco_plane(City[k].plane_departure[i].To, to,
+				cost + City[k].plane_departure[i].price,
+				temp, City[k].plane_departure[i].end))
+				succ = true;
+		}
+	TAG[city_num[from]] = 0;
+	if (succ) return true;
+	else return false;
+}
+
+bool fast_train(string from, string to, int cost, queue<shift> Q, clock clk)
+{
+	bool succ = 0;
+	TAG[city_num[from]] = 1;
+	if (from == to)
+	{
+		if (cost < Min)
+		{
+			Min = cost;
+			que = Q;
+		}
+		return true;
+	}
+	int k;
+	for (int i = 0; i < City.size(); ++i)
+	{
+		if (City[i].name == from) k = i;
+	}
+	for (int i = 0; i < City[k].train_departure.size(); ++i)
+		if (City[k].train_departure[i].start > clk && TAG[city_num[City[k].train_departure[i].To]] == 0)
+		{
+			queue<shift> temp = Q;
+			temp.push(City[k].train_departure[i]);
+			if (fast_train(City[k].train_departure[i].To, to,
+				cost + time_gap(clk,City[k].train_departure[i].start)+time_gap(City[k].train_departure[i].start, City[k].train_departure[i].end),
+				temp, City[k].train_departure[i].end))
+				succ = true;
+		}
+	TAG[city_num[from]] = 0;
+	if (succ) return true;
+	else return false;
+}
+
+bool fast_plane(string from, string to, int cost, queue<shift> Q, clock clk)
+{
+	bool succ = 0;
+	TAG[city_num[from]] = 1;
+	if (from == to)
+	{
+		if (cost < Min)
+		{
+			Min = cost;
+			que = Q;
+		}
+		return true;
+	}
+	int k;
+	for (int i = 0; i < City.size(); ++i)
+	{
+		if (City[i].name == from) k = i;
+	}
+	for (int i = 0; i < City[k].plane_departure.size(); ++i)
+		if (City[k].plane_departure[i].start > clk && TAG[city_num[City[k].plane_departure[i].To]] == 0)
+		{
+			queue<shift> temp = Q;
+			temp.push(City[k].plane_departure[i]);
+			if (fast_plane(City[k].plane_departure[i].To, to,
+				cost + time_gap(clk, City[k].plane_departure[i].start) + time_gap(City[k].plane_departure[i].start, City[k].plane_departure[i].end),
+				temp, City[k].plane_departure[i].end))
+				succ = true;
+		}
+	TAG[city_num[from]] = 0;
+	if (succ) return true;
+	else return false;
+}
+
+
+void economical()
+{
+	cout << "Please input your originating city + destination + type of vehicle." << endl
+		<< "( 0 means train and 1 means plane.)" << endl;
+	string from, to;
+	int _type;
+	cin >> from >> to >> _type;
+	int k;
+	k = 0;
+	for (int i = 0; i < City.size(); ++i)
+		if (City[i].name == from) k = 1;
+	if (k == 0)
+	{
+		cout << "Nonexistent City: " << from << endl;
+		return;
+	}
+	k = 0;
+	for (int i = 0; i < City.size(); ++i)
+		if (City[i].name == to) k = 1;
+	if (k == 0)
+	{
+		cout << "Nonexistent City: " << to << endl;
+		return;
+	}
+	Min = INT_MAX;
+	clear_que(que);
+	queue<shift> Q;
+	if (_type == 0)
+	{
+
+		if (eco_train(from, to, 0, Q, min2clock(0)))
+		{
+			cout << "The lowest cost: ￥" << Min << endl;
+			display_scheme(que);
+		}
+		else cout << "There is no route from " << from << " to " << to << "." << endl;
+
+	}
+	else
+	{
+		if (eco_plane(from, to, 0, Q, min2clock(0)))
+		{
+			cout << "The lowest cost: ￥" << Min << endl;
+			display_scheme(que);
+		}
+		else cout << "There is no route from " << from << " to " << to << "." << endl;
+	}
+	clear_que(que);
+	Min = INT_MAX;
+}
+
+void fast()
+{
+	cout << "Please input your originating city + destination + type of vehicle." << endl
+		<< "( 0 means train and 1 means plane.)" << endl;
+	string from, to;
+	int _type;
+	cin >> from >> to >> _type;
+	int k;
+	k = 0;
+	for (int i = 0; i < City.size(); ++i)
+		if (City[i].name == from) k = 1;
+	if (k == 0)
+	{
+		cout << "Nonexistent City: " << from << endl;
+		return;
+	}
+	k = 0;
+	for (int i = 0; i < City.size(); ++i)
+		if (City[i].name == to) k = 1;
+	if (k == 0)
+	{
+		cout << "Nonexistent City: " << to << endl;
+		return;
+	}
+	Min = INT_MAX;
+	clear_que(que);
+	queue<shift> Q;
+	if (_type == 0)
+	{
+		if (fast_train(from, to, 0, Q))
+		{
+			cout << "The lowest time cost: ";
+			min2clock(Min).display();
+			cout << endl;
+			display_scheme(que);
+		}
+		else cout << "There is no route from " << from << " to " << to << "." << endl;
+	}
+	else
+	{
+		if (fast_plane(from, to, 0, Q))
+		{
+			cout << "The lowest time cost: ";
+			min2clock(Min).display();
+			cout << endl;
+			display_scheme(que);
+		}
+		else cout << "There is no route from " << from << " to " << to << "." << endl;
+	}
+	Min = INT_MAX;
+	clear_que(que);
 }
 
 int main()
@@ -361,9 +625,9 @@ int main()
 		case 7:
 			economical();
 			break;
-		case 8: 
+		case 8:
 			return 0;
-		default: 
+		default:
 			cout << "invalid operation.Try again." << endl;
 		}
 	}
