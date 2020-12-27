@@ -9,8 +9,8 @@ using namespace std;
 
 class clock {
 public:
-	int hour ;              //0<=hour<=23
-	int min ;			   //0<=min<=59
+	int hour;              //0<=hour<=23
+	int min;			   //0<=min<=59
 	clock()
 	{
 		hour = 0;
@@ -76,7 +76,7 @@ public:
 
 queue<shift> que;
 int Min;
-void clear_que(queue<shift>& q) 
+void clear_que(queue<shift>& q)
 {
 	queue<shift> empty;
 	swap(empty, q);
@@ -585,7 +585,7 @@ void fast()
 	queue<shift> Q;
 	if (_type == 0)
 	{
-		if (fast_train(from, to, 0, Q,min2clock(0)))
+		if (fast_train(from, to, 0, Q, min2clock(0)))
 		{
 			cout << "The lowest time cost: ";
 			min2clock(Min).display();
@@ -596,7 +596,7 @@ void fast()
 	}
 	else
 	{
-		if (fast_plane(from, to, 0, Q,min2clock(0)))
+		if (fast_plane(from, to, 0, Q, min2clock(0)))
 		{
 			cout << "The lowest time cost: ";
 			min2clock(Min).display();
@@ -620,6 +620,8 @@ void print_cities()
 
 int main()
 {
+	freopen("input.txt", "r", stdin);
+	freopen("output.txt", "w", stdout);
 	char n;
 	while (1)
 	{
@@ -634,7 +636,7 @@ int main()
 			<< "8.calculate the most economical scheme;" << endl
 			<< "9.quit." << endl;
 		cin >> n;
-		if (n-'1'<0 || n-'9'>0)
+		if (n - '1' < 0 || n - '9' > 0)
 		{
 			cout << "invalid input.Try again." << endl << endl << endl;
 			continue;
