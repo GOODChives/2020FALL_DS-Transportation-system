@@ -1,0 +1,797 @@
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input city_name
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input city_name
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input city_name
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input city_name
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input city_name
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input city_name
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input city_name
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input city_name
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input city_name
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Shanghai   Beijing   Hefei   Chongqing   Wuhan   NewYork   Tokyo   Toronto   testcity   
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input city_name
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Shanghai   Beijing   Hefei   Chongqing   Wuhan   NewYork   Tokyo   Toronto   
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input the vehicle_type+start_city+destination+start_time+arrival_time+price.
+e.g. 0 Beijing Shanghai 6 30 8 30 600 . in which 0 means train.
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input the vehicle_type+start_city+destination+start_time+arrival_time+price.
+e.g. 0 Beijing Shanghai 6 30 8 30 600 . in which 0 means train.
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input the vehicle_type+start_city+destination+start_time+arrival_time+price.
+e.g. 0 Beijing Shanghai 6 30 8 30 600 . in which 0 means train.
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input the vehicle_type+start_city+destination+start_time+arrival_time+price.
+e.g. 0 Beijing Shanghai 6 30 8 30 600 . in which 0 means train.
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input the vehicle_type+start_city+destination+start_time+arrival_time+price.
+e.g. 0 Beijing Shanghai 6 30 8 30 600 . in which 0 means train.
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input the vehicle_type+start_city+destination+start_time+arrival_time+price.
+e.g. 0 Beijing Shanghai 6 30 8 30 600 . in which 0 means train.
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input the vehicle_type+start_city+destination+start_time+arrival_time+price.
+e.g. 0 Beijing Shanghai 6 30 8 30 600 . in which 0 means train.
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input the vehicle_type+start_city+destination+start_time+arrival_time+price.
+e.g. 0 Beijing Shanghai 6 30 8 30 600 . in which 0 means train.
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input the vehicle_type+start_city+destination+start_time+arrival_time+price.
+e.g. 0 Beijing Shanghai 6 30 8 30 600 . in which 0 means train.
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input the vehicle_type+start_city+destination+start_time+arrival_time+price.
+e.g. 0 Beijing Shanghai 6 30 8 30 600 . in which 0 means train.
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input the vehicle_type+start_city+destination+start_time+arrival_time+price.
+e.g. 0 Beijing Shanghai 6 30 8 30 600 . in which 0 means train.
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input the vehicle_type+start_city+destination+start_time+arrival_time+price.
+e.g. 0 Beijing Shanghai 6 30 8 30 600 . in which 0 means train.
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input the vehicle_type+start_city+destination+start_time+arrival_time+price.
+e.g. 0 Beijing Shanghai 6 30 8 30 600 . in which 0 means train.
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input the vehicle_type+start_city+destination+start_time+arrival_time+price.
+e.g. 0 Beijing Shanghai 6 30 8 30 600 . in which 0 means train.
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input the vehicle_type+start_city+destination+start_time+arrival_time+price.
+e.g. 0 Beijing Shanghai 6 30 8 30 600 . in which 0 means train.
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input the vehicle_type+start_city+destination+start_time+arrival_time+price.
+e.g. 0 Beijing Shanghai 6 30 8 30 600 . in which 0 means train.
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input the vehicle_type+start_city+destination+start_time+arrival_time+price.
+e.g. 0 Beijing Shanghai 6 30 8 30 600 . in which 0 means train.
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input the vehicle_type+start_city+destination+start_time+arrival_time+price.
+e.g. 0 Beijing Shanghai 6 30 8 30 600 . in which 0 means train.
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input the vehicle_type+start_city+destination+start_time+arrival_time+price.
+e.g. 0 Beijing Shanghai 6 30 8 30 600 . in which 0 means train.
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input the vehicle_type+start_city+destination+start_time+arrival_time+price.
+e.g. 0 Beijing Shanghai 6 30 8 30 600 . in which 0 means train.
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input the vehicle_type+start_city+destination+start_time+arrival_time+price.
+e.g. 0 Beijing Shanghai 6 30 8 30 600 . in which 0 means train.
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input the vehicle_type+start_city+destination+start_time+arrival_time+price.
+e.g. 0 Beijing Shanghai 6 30 8 30 600 . in which 0 means train.
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input the name of city.
+Train Shanghai->Hefei Depart:6 : 30 Arrive:8 : 00 Price: ￥110
+Train Shanghai->Beijing Depart:11 : 30 Arrive:12 : 40 Price: ￥320
+Train Shanghai->Wuhan Depart:9 : 20 Arrive:11 : 30 Price: ￥400
+Train Shanghai->Chongqing Depart:7 : 20 Arrive:10 : 00 Price: ￥420
+Train Beijing->Shanghai Depart:4 : 30 Arrive:6 : 30 Price: ￥340
+Train Hefei->Shanghai Depart:4 : 20 Arrive:6 : 20 Price: ￥180
+Train Chongqing->Shanghai Depart:18 : 00 Arrive:20 : 50 Price: ￥410
+Plane Shanghai->Beijing Depart:6 : 10 Arrive:7 : 5 Price: ￥810
+Plane Shanghai->Beijing Depart:7 : 10 Arrive:8 : 30 Price: ￥720
+Plane Beijing->Shanghai Depart:6 : 10 Arrive:7 : 50 Price: ￥800
+Plane Beijing->Shanghai Depart:5 : 30 Arrive:6 : 20 Price: ￥790
+Plane Wuhan->Shanghai Depart:5 : 30 Arrive:6 : 30 Price: ￥310
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input the name of city.
+Train Beijing->Shanghai Depart:4 : 30 Arrive:6 : 30 Price: ￥340
+Train Beijing->Chongqing Depart:5 : 40 Arrive:10 : 10 Price: ￥400
+Train Beijing->Chongqing Depart:8 : 20 Arrive:11 : 10 Price: ￥410
+Train Shanghai->Beijing Depart:11 : 30 Arrive:12 : 40 Price: ￥320
+Train Wuhan->Beijing Depart:4 : 55 Arrive:5 : 30 Price: ￥325
+Plane Beijing->Shanghai Depart:6 : 10 Arrive:7 : 50 Price: ￥800
+Plane Beijing->NewYork Depart:13 : 30 Arrive:15 : 45 Price: ￥1100
+Plane Beijing->Toronto Depart:11 : 20 Arrive:13 : 10 Price: ￥1700
+Plane Beijing->Toronto Depart:13 : 00 Arrive:16 : 30 Price: ￥1760
+Plane Beijing->Shanghai Depart:5 : 30 Arrive:6 : 20 Price: ￥790
+Plane Shanghai->Beijing Depart:6 : 10 Arrive:7 : 5 Price: ￥810
+Plane Wuhan->Beijing Depart:8 : 55 Arrive:10 : 10 Price: ￥1100
+Plane Shanghai->Beijing Depart:7 : 10 Arrive:8 : 30 Price: ￥720
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input your originating city + destination + type of vehicle.+when you set off.
+( 0 means train and 1 means plane.)
+The lowest time cost: 8 : 00 
+Train Hefei->Shanghai Depart:4 : 20 Arrive:6 : 20 Price: ￥180
+Train Shanghai->Chongqing Depart:7 : 20 Arrive:10 : 00 Price: ￥420
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input your originating city + destination + type of vehicle.
+( 0 means train and 1 means plane.)
+The lowest cost: ￥390
+Train Shanghai->Hefei Depart:6 : 30 Arrive:8 : 00 Price: ￥110
+Train Hefei->Wuhan Depart:9 : 20 Arrive:11 : 30 Price: ￥280
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input your originating city + destination + type of vehicle.+when you set off.
+( 0 means train and 1 means plane.)
+The lowest time cost: 3 : 30 
+Plane Wuhan->Shanghai Depart:5 : 30 Arrive:6 : 30 Price: ￥310
+Plane Shanghai->Beijing Depart:7 : 10 Arrive:8 : 30 Price: ￥720
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input your originating city + destination + type of vehicle.
+( 0 means train and 1 means plane.)
+The lowest cost: ￥2680
+Plane Wuhan->Shanghai Depart:5 : 30 Arrive:6 : 30 Price: ￥310
+Plane Shanghai->Beijing Depart:7 : 10 Arrive:8 : 30 Price: ￥720
+Plane Beijing->NewYork Depart:13 : 30 Arrive:15 : 45 Price: ￥1100
+Plane NewYork->Toronto Depart:15 : 50 Arrive:16 : 55 Price: ￥550
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input your originating city + destination + when you set off.
+The lowest time cost: 5 : 30 
+Train Shanghai->Beijing Depart:11 : 30 Arrive:12 : 40 Price: ￥320
+Plane Beijing->Toronto Depart:13 : 00 Arrive:16 : 30 Price: ￥1760
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input your originating city + destination .
+The lowest cost: ￥1975
+Train Wuhan->Beijing Depart:4 : 55 Arrive:5 : 30 Price: ￥325
+Plane Beijing->NewYork Depart:13 : 30 Arrive:15 : 45 Price: ￥1100
+Plane NewYork->Toronto Depart:15 : 50 Arrive:16 : 55 Price: ￥550
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input the vehicle_type+start_city+destination+start_time+arrival_time+price.
+e.g. 0 Beijing Shanghai 6 30 8 30 600 . in which 0 means train.
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input the name of city.
+Train Beijing->Shanghai Depart:4 : 30 Arrive:6 : 30 Price: ￥340
+Train Beijing->Chongqing Depart:5 : 40 Arrive:10 : 10 Price: ￥400
+Train Beijing->Chongqing Depart:8 : 20 Arrive:11 : 10 Price: ￥410
+Train Shanghai->Beijing Depart:11 : 30 Arrive:12 : 40 Price: ￥320
+Train Wuhan->Beijing Depart:4 : 55 Arrive:5 : 30 Price: ￥325
+Plane Beijing->Shanghai Depart:6 : 10 Arrive:7 : 50 Price: ￥800
+Plane Beijing->NewYork Depart:13 : 30 Arrive:15 : 45 Price: ￥1100
+Plane Beijing->Toronto Depart:11 : 20 Arrive:13 : 10 Price: ￥1700
+Plane Beijing->Toronto Depart:13 : 00 Arrive:16 : 30 Price: ￥1760
+Plane Beijing->Shanghai Depart:5 : 30 Arrive:6 : 20 Price: ￥790
+Plane Shanghai->Beijing Depart:6 : 10 Arrive:7 : 5 Price: ￥810
+Plane Wuhan->Beijing Depart:8 : 55 Arrive:10 : 10 Price: ￥1100
+Plane Shanghai->Beijing Depart:7 : 10 Arrive:8 : 30 Price: ￥720
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input city_name
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
+Please input the name of city.
+Train Beijing->Chongqing Depart:5 : 40 Arrive:10 : 10 Price: ￥400
+Train Beijing->Chongqing Depart:8 : 20 Arrive:11 : 10 Price: ￥410
+Train Wuhan->Beijing Depart:4 : 55 Arrive:5 : 30 Price: ￥325
+Plane Beijing->NewYork Depart:13 : 30 Arrive:15 : 45 Price: ￥1100
+Plane Beijing->Toronto Depart:11 : 20 Arrive:13 : 10 Price: ￥1700
+Plane Beijing->Toronto Depart:13 : 00 Arrive:16 : 30 Price: ￥1760
+Plane Beijing->Shanghai Depart:5 : 30 Arrive:6 : 20 Price: ￥790
+Plane Wuhan->Beijing Depart:8 : 55 Arrive:10 : 10 Price: ￥1100
+Plane Shanghai->Beijing Depart:7 : 10 Arrive:8 : 30 Price: ￥720
+
+
+What do you want to do?
+1.Add a city;
+2.Delete a city;
+3.Add a shift;
+4.delete a shift;
+5.print all the cities;
+6.print the time table;
+7:calculate the fastest scheme;
+8.calculate the most economical scheme;
+9.super fast!!!
+10.super cheap!!!
+11.quit.
