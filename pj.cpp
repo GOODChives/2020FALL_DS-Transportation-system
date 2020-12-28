@@ -7,7 +7,7 @@
 using namespace std;
 
 
-class clock {
+class clock {                 //present the clock time
 public:
 	int hour=0;              //0<=hour<=23
 	int min=0;			   //0<=min<=59
@@ -53,8 +53,8 @@ public:
 
 
 
-class shift {
-public:
+class shift {                           //where the vehicle set off ,where it arrives
+public:                                 // when
 	shift(){}
 	shift(const shift& a)
 	{
@@ -178,8 +178,11 @@ void delete_city()
 		vector<shift>::iterator iter = City[j].plane_arrival.begin();
 		for (; iter != City[j].plane_arrival.end(); iter++)
 		{
-			if (iter->From == s) City[j].plane_arrival.erase(iter);
-			break;
+			if (iter->From == s)
+			{
+				City[j].plane_arrival.erase(iter);
+				break;
+			}
 		}
 	}
 
@@ -191,8 +194,11 @@ void delete_city()
 		vector<shift>::iterator iter = City[j].plane_departure.begin();
 		for (; iter != City[j].plane_departure.end(); iter++)
 		{
-			if (iter->To == s) City[j].plane_departure.erase(iter);
-			break;
+			if (iter->To == s) 
+			{
+				City[j].plane_departure.erase(iter);
+				break;
+			}
 		}
 	}
 
@@ -204,8 +210,11 @@ void delete_city()
 		vector<shift>::iterator iter = City[j].train_arrival.begin();
 		for (; iter != City[j].train_arrival.end(); iter++)
 		{
-			if (iter->From == s) City[j].train_arrival.erase(iter);
-			break;
+			if (iter->From == s)
+			{
+				City[j].train_arrival.erase(iter);
+				break;
+			}
 		}
 	}
 
@@ -217,8 +226,11 @@ void delete_city()
 		vector<shift>::iterator iter = City[j].train_departure.begin();
 		for (; iter != City[j].train_departure.end(); iter++)
 		{
-			if (iter->To == s) City[j].train_departure.erase(iter);
-			break;
+			if (iter->To == s)
+			{
+				City[j].train_departure.erase(iter);
+				break;
+			}
 		}
 	}
 
