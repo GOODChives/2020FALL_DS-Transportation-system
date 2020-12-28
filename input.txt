@@ -5,7 +5,7 @@
 1 Wuhan
 1 NewYork
 1 Tokyo
-1 Taranto
+1 Toronto
 1 testcity
 5
 2 testcity
@@ -15,20 +15,60 @@
 3
 1 Beijing Shanghai 6 10 7 50 800
 3
-0 Shanghai Hefei 6 30 8 0 210
-3
-0 Shanghai Chongqing 7 20 10 0 360
+0 Shanghai Hefei 6 30 8 0 110
 3
 0 Hefei Shanghai 4 20 6 20 180
 3
+0 Shanghai Beijing 11 30 12 40 320
+3
+0 Hefei Wuhan 9 20 11 30 280
+3
+0 Wuhan Beijing 4 55 5 30 325
+3
+0 Beijing Chongqing 5 40 10 10 400
+3
 0 Beijing Chongqing 8 20 11 10 410
 3
-0 Shanghai Wuhan 9 20 11 30 270
+0 Shanghai Wuhan 9 20 11 30 400
 3
 0 Wuhan Chongqing 11 35 14 50 380
 3
+0 Shanghai Chongqing 7 20 10 0 420
+3
 0 Chongqing Shanghai 18 0 20 50 410
-6
-Shanghai
-7 Hefei Chongqing 0
-9
+3
+1 Beijing NewYork 13 30 15 45 1100
+3
+1 NewYork Toronto 15 50 16 55 550
+3
+1 Beijing Toronto 11 20 13 10 1700
+3
+1 Beijing Toronto  13 0 16 30 1760
+3
+1 Beijing Shanghai 5 30 6 20 790
+3
+1 Shanghai Beijing 6 10 7 5 810
+3
+1 Wuhan Beijing 8 55 10 10 1100
+3
+1 Wuhan Shanghai 5 30 6 30 310
+3
+1 Shanghai Beijing 7 10 8 30 720
+
+6 Shanghai
+6 Beijing
+
+7 Hefei Chongqing 0 2 0
+8 Shanghai Wuhan 0
+7 Wuhan Beijing 1 5 0
+8 Wuhan Toronto 1
+9 Shanghai Toronto 11 0
+10 Wuhan Toronto
+
+
+
+4 1 Beijing Shanghai 5 30 6 20 790
+6 Beijing
+2 Shanghai
+6 Beijing
+11
